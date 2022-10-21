@@ -1,0 +1,116 @@
+html {
+    background: url(../../pictures/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+}
+
+.media-feed {
+    width: 1009px;
+    height: 1048px;
+    position: fixed; top: 32px; left: 456px;
+    background-color: white;
+}
+
+/* открывающая кнопка */
+.open-menu-btn {
+    width: 89px;
+    height: 70px;
+    position: fixed; top: 18px; left: 1831px;
+    background: url("../../pictures/open-menu-icon.svg") no-repeat center;
+    border: none;
+}
+
+.open-menu-btn:hover {
+    width: 95px;
+    height: 72px;
+    background: url("../../pictures/hover-open-menu-icon.png") no-repeat center;
+}
+
+.open-menu-btn:active {
+    width: 95px;
+    height: 72px;
+    background: url("../../pictures/active-open-menu-icon.png") no-repeat center;
+}
+
+/* закрывающая кнопка */
+.close-menu-btn {
+    position: fixed; top: 14px; left: 1612px;
+    border: none;
+    width: 23px;
+    height: 37px;
+    background: url("../../pictures/close-menu-icon.png") no-repeat center;
+}
+
+.close-menu-btn:hover {
+    position: fixed; top: 12px; left: 1610px;
+    width: 27px;
+    height: 41px;
+    background: url("../../pictures/hover-close-menu-icon.png") no-repeat center;
+}
+
+.close-menu-btn:active {
+    position: fixed; top: 12px; left: 1610px;
+    width: 27px;
+    height: 41px;
+    background: url("../../pictures/active-close-menu-icon.png") no-repeat center;
+}
+
+
+/* контент выпадающего меню */
+/* по умолчанию должно быть скрыто */
+.drop-menu-content {
+    /* display: none; */ /*  скрывает */
+    width: 335px;
+    height: 351px;
+    background: url("../../pictures/drop-menu.png") no-repeat center;
+    position: fixed; top: 0px; left: 1589px;
+}
+
+/*класс для добавления в скрипте*/
+.show {
+    display:block;
+}
+
+/* стилизация навигации */
+.sign-out-btn {
+    font-size: 18px;
+    position: fixed; top: 275px; left: 1718px;
+    background: none;
+    border: none;
+    text-decoration: underline;
+}
+
+.navigation {
+    position: fixed; top: 36px; left: 1695px;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    text-align: right;
+}
+
+.navigation-element {
+    list-style-type: none;
+    font-size: 24px;
+    width: 189px;
+    height: 28px;
+    left: 1695px;
+    top: 36px;
+}
+
+.drop-menu a {
+    text-decoration: none;
+    color: #086FA1;
+}
+
+.drop-menu .mail {
+    position: fixed; top: 225px; left: 1746px;
+    color: #3CA0D0;
+    font-size: 18px;
+}
+
+a:hover {
+    text-shadow: 0 0 1.2px;
+}
