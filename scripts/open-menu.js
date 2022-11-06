@@ -1,5 +1,8 @@
-function openMenu() {
-    document.getElementsByClassName("drop-menu-content").classList.add('show');
-}
+const hb = document.querySelector('.header__hamburger');
+const menu = document.querySelector('.header');
+const body = document.querySelector('body');
 
-//не пашет
+hb.addEventListener('click', function() {
+    menu.classList.toggle('active');
+    body.classList.toggle('lock');
+})

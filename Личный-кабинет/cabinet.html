@@ -3,24 +3,36 @@
 <head>
   <meta charset="utf-8" />
   <title>Кабинет</title>
-  <link rel="stylesheet" href="css/cabinet.css" />
+  <link rel="stylesheet" href="css/cabinet.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="drop-menu">
-    <button class="open-menu-btn"></button>
-    <div class="drop-menu-content">
-      <button class="close-menu-btn"></button>
-      <ul class="navigation">
-        <li class="navigation-element"><a href="#">Личный кабинет</a></li>
-        <li class="navigation-element"><a href="manual.html">Руководство</a></li>
-        <li class="navigation-element"><a href="map.html">Карта</a></li>
-      </ul>
-      <p class="mail">mail@yandex.ru</p>
-      <button class="sign-out-btn"><a href="signIn.html">Выйти из аккаунта</a></button>
+  <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <button class="header__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <li><a href="cabinet.html">Личный кабинет</a></li>
+                    <li><a href="manual.html">Руководство</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+                <ul class="footer_list">
+                    <li><a href="cabinet.html" class='email'>mail@yandex.ru</a></li>
+                    <li><a href="signIn.html" class='log_out'>Выйти из аккаунта</a></li>
+                </ul>
+            </div>
+        </div>
     </div>
-  </div>
+  </header>
   <div class="media-feed">
-    <!-- какой-то контент -->
+    <a href="https://forms.gle/esxZH17urhV8hP9t8">Опросник</a> 
   </div>
   <script src="../../scripts/open-menu.js"></script>
 </body>
