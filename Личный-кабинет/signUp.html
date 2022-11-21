@@ -9,30 +9,32 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <form action="">
+  <!-- action?? -->
+  <form action="" method="post">
     <h1 title="Форма регистрации на сайте">Регистрация</h1>
     <div class="group">
       <label for="Почта"></label>
-      <input placeholder="Почта" type="text">
+      <input placeholder="Почта" type="email" name="mail" id="mail" autofocus required>
     </div>
     <div class="group">
       <label for="Фамилия и имя"></label>
-      <input placeholder="Фамилия и имя" type="text">
+      <input placeholder="Фамилия и имя" type="text" name="name" id="name" required>
     </div>
     <div class="group">
       <label for="Пароль"></label>
-      <input placeholder="Пароль" type="password">
+      <input placeholder="Пароль" type="password" name="password" id="password" required>
     </div>
     <div class="group">
       <label for="Повторите пароль"></label>
-      <input placeholder="Повторите пароль" type="password">
+      <input placeholder="Повторите пароль" type="password" name="repeatedPassword" id="repeatedPassword" required>
     </div>
     <div class="sign-btn">
-      <button>Зарегистрироваться</button>
+      <button class="signUp-btn">Зарегистрироваться</button>
     </div>
     <div class="sign-btn">
       <a href="signIn.html">Войти в аккаунт</a>
     </div>
   </form>
+  <script src="../../scripts/check-sign-up-form.js"></script>
 </body>
 </html>

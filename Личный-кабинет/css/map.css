@@ -468,7 +468,57 @@ a {
   z-index: -10;
 }
 
-p {
+.point-name, p {
 margin: 20px;
 font-size: 20px;
+}
+
+.point-descript-btn, .header__hamburger {
+  cursor: pointer;
+}
+
+.point-descript-container {
+  position: fixed;
+}
+
+/* Выпадающее содержимое (скрыто по умолчанию) */
+.point-descript-content {
+  display: none;
+  position: fixed; top: 0%; left: 0%;
+  background-color: #ffffff;
+  min-width: 300px;
+  width: 25%;
+  height: 100%;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.show {
+  display:block;
+}
+
+.point-img {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.point-descript-open-btn {
+  position: absolute;
+  background: url("../../pictures/point-descript.svg") no-repeat;
+  background-size: 50px;
+  border: none;
+  width: 50px;
+  height: 50px;
+}
+
+.point-descript-close-btn {
+  /* left: 80%;
+  position: relative; */
+  top: 0%;
+  margin: 1px;
+  z-index: 1;
+  left: 0%;
+  position: absolute;
 }
