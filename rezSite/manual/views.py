@@ -2,4 +2,4 @@ from django.shortcuts import render
 
 
 def manual(request):
-    return render(request, 'templates/manual.html')
+    return render(request, 'manual.html')
