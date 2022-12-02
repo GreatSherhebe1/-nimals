@@ -48,7 +48,7 @@ function init(){
         wayPointStartIconColor: "#FFFFFF",
         wayPointStartIconFillColor: "#B3B3B3",
         // Внешний вид линии активного маршрута.
-        routeActiveStrokeWidth: 8,
+        routeActiveStrokeWidth: 2,
         routeActiveStrokeStyle: 'solid',
         routeActiveStrokeColor: "#990000",
         // Внешний вид линий альтернативных маршрутов.
@@ -73,17 +73,4 @@ function init(){
             });
         });
     });
-
-    // var geoObjects = [];
-    // for (var i = 0; i < points.length; i++){
-    //     placeMark = new ymaps.Placemark(points[i], 
-    //         {iconContent: i + 1}, {})
-    //     geoObjects[i] = placeMark;
-    //     myMap.geoObjects.add(placeMark);
-    // }
-    
-    // // кластер объединяет точки при большом удалении
-    // var clusterer = new ymaps.Clusterer();
-    // clusterer.add(geoObjects);
-    // myMap.geoObjects.add(clusterer);
 }
