@@ -1,9 +1,10 @@
+{% load static%}
 <!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
   <title>Руководство</title>
-  <link rel="stylesheet" href="css/cabinet.css"/>
+  <link rel="stylesheet" href="{% static 'css/manual.css' %}"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -32,7 +33,7 @@
     </div>
   </header>
   <div class="media-feed">
-    <img src="../pictures/Metallurg.jpg" width="1010" height="500">
+    <img src="{% static 'pictures/Metallurg.jpg'%}" width="1010" height="500">
     <p>
       Дом культуры «Металлург»<br>
       Адрес: ул. Костоусова, 82<br>
@@ -46,6 +47,6 @@
     </p>
     <hr>
   </div>
-  <script src="../../scripts/open-menu.js"></script>
+  <script src="{% static 'cabinet/static/scripts/open-menu.js' %}"></script>
 </body>
 </html>

@@ -1,9 +1,10 @@
+{% load static %}
 <!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
   <title>Личный кабинет</title>
-  <link rel="stylesheet" href="css/map.css" />
+  <link rel="stylesheet" href="{% static 'css/map.css' %}" />
   <script src="https://api-maps.yandex.ru/2.1/?apikey=8c2cdcb1-d99b-4933-bae4-58cac30e0d02&lang=ru_RU" type="text/javascript">
   </script>
 </head>
@@ -32,6 +33,6 @@
     </div>
   </header>
   <script src="../../scripts/open-menu.js"></script>
-  <script src="../../scripts/map-constructor.js"></script>
+  <script src="{% static 'scripts/map-constructor.js' %}"></script>
 </body>
 </html>

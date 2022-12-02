@@ -1,9 +1,12 @@
+{% load static %}
 <!doctype html>
 <html lang="ru">
 <head>
   <meta charset="utf-8" />
   <title>Кабинет</title>
-  <link rel="stylesheet" href="css/cabinet.css"/>
+    <!--css/cabinet.css-->
+    <!--static/css/cabinet.css-->
+  <link rel="stylesheet" href="{% static 'css/cabinet.css' %}"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
@@ -19,13 +22,13 @@
             </button>
             <div class="header__menu">
                 <ul class="header__list">
-                    <li><a href="cabinet.html">Личный кабинет</a></li>
-                    <li><a href="manual.html">Руководство</a></li>
-                    <li><a href="map.html">Карта</a></li>
+                    <li><a href="cabinet">Личный кабинет</a></li>
+                    <li><a href="manual">Руководство</a></li>
+                    <li><a href="map">Карта</a></li>
                 </ul>
                 <ul class="footer_list">
-                    <li><a href="cabinet.html" class='email'>mail@yandex.ru</a></li>
-                    <li><a href="signIn.html" class='log_out'>Выйти из аккаунта</a></li>
+                    <li><a href="cabinet" class='email'>mail@yandex.ru</a></li>
+                    <li><a href="signIn" class='log_out'>Выйти из аккаунта</a></li>
                 </ul>
             </div>
         </div>
@@ -34,6 +37,7 @@
   <div class="media-feed">
     <a href="https://forms.gle/esxZH17urhV8hP9t8">Опросник</a> 
   </div>
-  <script src="../../scripts/open-menu.js"></script>
+  <!--../../scripts/open-menu.js-->
+  <script src="{% static 'scripts/open-menu.js' %}"></script>
 </body>
 </html>
