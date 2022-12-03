@@ -1,0 +1,52 @@
+{% load static%}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>Руководство</title>
+  <link rel="stylesheet" href="{% static 'css/manual.css' %}"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+        <div class="header__body">
+            <button class="header__hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div class="header__menu">
+                <ul class="header__list">
+                    <li><a href="cabinet.html">Личный кабинет</a></li>
+                    <li><a href="manual.html">Руководство</a></li>
+                    <li><a href="map.html">Карта</a></li>
+                </ul>
+                <ul class="footer_list">
+                    <li><a href="cabinet.html" class='email'>mail@yandex.ru</a></li>
+                    <li><a href="signIn.html" class='log_out'>Выйти из аккаунта</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+  </header>
+  <div class="media-feed">
+    <img src="{% static 'pictures/Metallurg.jpg'%}" width="1010" height="500">
+    <p>
+      Дом культуры «Металлург»<br>
+      Адрес: ул. Костоусова, 82<br>
+      «Металлург» - самое популярное культурное заведение в городе. Дом культуры является центром проведения важнейших общегородских мероприятий, таких как День города, Масленица. Также здесь есть современный кинозал «Галактика» и Режевская художественная галерея.
+    </p>
+    <hr>
+    <p>
+      <b>Вход/регистрация в аккаунт</b><br>
+      Что бы зайти в свой аккаунт необходимо ввести в окне (фото окошка ‘Почта’) действительную электронную почту, а в окне (фото окошка ‘Пароль’) пароль от вашего аккаунта и нажать кнопку (фото окошка ‘Войти в аккаунт’).<br>
+      Если у Вас нет еще аккаунта, то необходимо зарегистрироваться. Для этого нужно нажать кнопку (фото окошка ‘зарегистрироваться’), далее ввести в окне (фото окошка ‘Почта’) действительную электронную почту, в окне (фото окошка ‘Фамилия и имя’) свою фамилию и имя. В окне (фото окошка ‘пароль”) необходимо придумать надежный пароль (рекомендуем использовать заглавные и строчные буквы и цифры) и в окне (фото окошка ‘повторите пароль”) снова напишите ваш пароль. Запомните Ваш пароль! И далее нажмите кнопку (фото окошка “зарегистрироваться”).(фото окошка ‘пароль”) 
+    </p>
+    <hr>
+  </div>
+  <script src="{% static 'cabinet/static/scripts/open-menu.js' %}"></script>
+</body>
+</html>
