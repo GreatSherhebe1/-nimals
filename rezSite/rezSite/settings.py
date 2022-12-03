@@ -80,13 +80,13 @@ WSGI_APPLICATION = 'rezSite.wsgi.application'
 
 DATABASES = {
     'default': {
-        # 'ENGINE': 'django.db.backends.sqlite3',
-        # 'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        'NAME': 'REZdb',
-        'ENGINE': 'django.db.backends.mysql',
-        'USER': 'root',
-        'PASSWORD': 'Qnt1Nem0Sh4kel@',
-        'HOST': 'localhost',
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        # 'NAME': 'REZdb',
+        # 'ENGINE': 'django.db.backends.mysql',
+        # 'USER': 'root',
+        # 'PASSWORD': 'Qnt1Nem0Sh4kel@',
+        # 'HOST': 'localhost',
     }
 }
 
@@ -128,8 +128,8 @@ USE_TZ = True
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATICFILES_DIRS = [
-    os.path.join("-nimals", 'pictures'),
-    os.path.join("-nimals", 'scripts')
+    os.path.join(BASE_DIR, 'static/pictures'),
+    os.path.join(BASE_DIR, 'static/scripts')
 ]
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')

@@ -5,8 +5,8 @@ from .views import *
 
 
 urlpatterns = [
-    path(r'In/', sign_in, name = 'signIn'),
+    path(r'In/', sign_in, name='signIn'),
     path(r'Up/', sign_up),
-    path('logout',LogoutView.as_view(next_page=settings.LOGOUT_REDIRECT_URL),name = 'logout'),
-    path('check',authcheck),
+    path('logout', LogoutView.as_view(next_page=settings.LOGOUT_REDIRECT_URL),name = 'logout'),
+    path('check', authcheck),
 ]
