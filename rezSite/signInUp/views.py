@@ -21,7 +21,7 @@ def sign_in(request):
         user = authenticate(request, username=email, password=password)
         if user is not None:
             login(request, user)
-            return render(request, 'signUp.html')
+            return redirect('map')
         else:
             messages.info(request, 'Неправильный имэйл или пароль')
             return render(request, 'signIn.html')
