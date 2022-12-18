@@ -558,7 +558,7 @@ img {
   min-width: 400px;
   background-color: #fff;
   margin: 25px auto 0 auto;
-  padding: 10px 54px 50px 54px;
+  padding: 10px 54px 100px 54px;
   box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
 }
 
@@ -568,15 +568,22 @@ img {
   line-height: 30px;
   text-align: center;
   color: #034769;
-  margin: 60px auto 65px auto;
+  margin: 90px auto 65px auto;
 }
 
 .intro h1 {
   font-weight: 700;
   font-size: 28px;
   text-align: center;
-  margin: 34px auto 58px auto;
+  margin: 34px auto 32px auto;
   color: #034769;
+}
+
+.intro p {
+  color: #034769;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 12px 0 12px;
 }
 
 .subsection img {
@@ -654,4 +661,18 @@ img {
 
 .navigation_list li:last-child {
   margin-bottom: 0;
+}
+
+/* ссылки */
+
+a:hover {
+  opacity: 0.65;
+}
+
+a:active {
+  opacity: 0.45;
+}
+
+.email {
+  pointer-events: none;
 }
