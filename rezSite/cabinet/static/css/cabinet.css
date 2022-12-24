@@ -478,12 +478,12 @@ h1 {
   text-align: center;
   text-indent: 20px;
 
-  margin: 0 0 90px 0;
+  margin: 0 0 120px 0;
   padding: 0;
 }
 
 .questionnaire-component {
-  margin: 0 auto 64px auto;
+  margin: 60px auto 64px auto;
 }
 
 .questionnaire-component:last-child {
@@ -519,6 +519,7 @@ h1 {
   display: block;
   font-weight: medium italic;
   color: #3CA0D0;
+  margin: 100px auto 0 auto;
 }
 
 ul {
