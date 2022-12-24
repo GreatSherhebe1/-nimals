@@ -10,6 +10,7 @@
 </head>
 <body>
   <div class="map" id="map" style="width: 100%; height: 100%; position: fixed; left: 0%; top: 0%;"></div>
+
   <header class="header">
     <div class="container">
         <div class="header__body">
@@ -32,6 +33,13 @@
         </div>
     </div>
   </header>
+
+  <select class="routes" id="routes">
+    <option value="RED_LINE" selected>Красная линия</option>
+    <option value="SMALL_LINE">Малый режский маршрут</option>
+    <option value="LARGE_LINE">Большой режский маршрут</option>
+  </select>
+
   <script src="{% static 'scripts/open-menu.js' %}"></script>
   <script src="{% static 'scripts/map-constructor.js' %}"></script>
 </body>

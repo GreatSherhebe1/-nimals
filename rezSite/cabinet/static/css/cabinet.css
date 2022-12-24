@@ -72,7 +72,7 @@ a {
 .container {
   margin: 0 auto; 
   position: absolute; /* блок занимает ширину содержимого, max-width её ограничивает */
-  top: -5px; /* прикрепить к верху родителя */
+  top: -22px; /* прикрепить к верху родителя */
   right: 20px;
 }
 
@@ -455,81 +455,100 @@ a {
   }
 }
 
+.media-feed {
+  background-color: #fff;
+  width: 53.5%;
+  min-width: 400px;
+  margin: 25px auto 0 auto;
+  padding: 10px 54px 100px 54px;
+}
+
 h1 {
   text-align: center;
   font-size: 28px;
   font-weight: bold;
   color: #034769;
+  margin: 34px auto 32px auto;
 }
 
 .page-description {
-  font-size: 24px;
+  font-size: 22px;
   font-weight: normal;
   color: #034769;
-  width: 690;
   text-align: center;
   text-indent: 20px;
+
+  margin: 0 0 120px 0;
+  padding: 0;
+}
+
+.questionnaire-component {
+  margin: 60px auto 64px auto;
+}
+
+.questionnaire-component:last-child {
+  margin-bottom: 0;
 }
 
 .questionnaire-component h2 {
-  font-size: 26px;
+  font-size: 24px;
   font-weight: medium;
   color: #034769;
+  line-height: 27px;
+
+  margin: 0 0 15px 0;
+  padding: 0;
+}
+
+.dot {
+  margin: 0 10px 0 10px;
 }
 
 .questionnaire-description {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: normal;
   color: #000;
+
+  margin: 0 0 15px 0;
+  padding: 0;
 }
 
 .questionnaire-link {
-  font-size: 22px;
+  font-size: 18px;
   text-align: center;
   display: block;
   font-weight: medium italic;
   color: #3CA0D0;
-}
-
-.questionnaire-component {
-  padding-bottom: 28px;
+  margin: 100px auto 0 auto;
 }
 
 ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 ul li h2 {
-  /* word-break: break-all; не работает перенос на меленьких экранах */
   left: 50px;
   line-height: 18px;
-  position: relative;
-}
-
-ul li h2::before {
-  color: #034769;
-  content:"\2022";
-  font-size: 26px;
-  font-weight: 700;
-  left: -15px;
-  line-height: 18px;        
-  position: absolute;
-  top: 0;
-}
-
-p {
-  margin: 20px;
-  font-size: 20px;
-}
-
-#content {
-  background-color: #fff;
-  width: 50%;
-  margin: 0 auto;
 }
 
 #footer
 {
     border: 1px solid;
     height: 50px;
+}
+
+/* ссылки */
+
+a:hover {
+  opacity: 0.65;
+}
+
+a:active {
+  opacity: 0.45;
+}
+
+.email {
+  pointer-events: none;
 }

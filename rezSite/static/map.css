@@ -1,5 +1,5 @@
 html {
-  background: url(../pictures/background.jpg) no-repeat center center fixed;
+  background: url(../../pictures/background.jpg) no-repeat center center fixed;
   scroll-behavior: smooth;
   -webkit-background-size: cover;
   -moz-background-size: cover;

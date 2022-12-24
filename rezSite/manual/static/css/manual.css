@@ -31,7 +31,7 @@ a {
 }
 
 .header {
-  position: fixed;    
+  position: fixed;   
   width: 100%;
 }
 
@@ -72,7 +72,7 @@ a {
 .container {
   margin: 0 auto; 
   position: absolute; /* блок занимает ширину содержимого, max-width её ограничивает */
-  top: -5px; /* прикрепить к верху родителя */
+  top: -22px; /* прикрепить к верху родителя */
   right: 20px;
 }
 
@@ -548,4 +548,131 @@ img {
   
   transform: translate(-50%, -50%); */
   /* не могу нормально выровнять под div */
+}
+
+
+/* лента */
+
+.media-feed {
+  width: 53.5%;
+  min-width: 400px;
+  background-color: #fff;
+  margin: 25px auto 0 auto;
+  padding: 10px 54px 100px 54px;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.media-feed h2 {
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #034769;
+  margin: 90px auto 65px auto;
+}
+
+.intro h1 {
+  font-weight: 700;
+  font-size: 28px;
+  text-align: center;
+  margin: 34px auto 32px auto;
+  color: #034769;
+}
+
+.intro p {
+  color: #034769;
+  text-align: center;
+  font-size: 22px;
+  margin: 0 12px 0 12px;
+}
+
+.subsection img {
+  object-fit: cover;
+  width: 45%;
+  height: auto;
+  display: block;
+}
+
+.subsection {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 43px auto;
+}
+
+.subsection p {
+  display: block;
+  margin: auto 0 auto 0;
+  width: 48%;
+}
+
+.subsection:nth-child(2n){
+  flex-direction: row-reverse;
+}
+
+/* навигация по мануалу */
+
+.navigation {
+  position: absolute;
+}
+
+.navigation-container {
+  user-select: none;
+  width: 241px;
+  position: fixed;
+  box-shadow: 8px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.navigation-header {
+  padding: 7px;
+  margin: 0;
+  background-color: #fff;
+  display: flex;
+  cursor: pointer;
+}
+
+.navigation-header p {
+  margin: 0 15px 0 20px;
+  font-size: 20px;
+  color: #235D79;
+  padding: 0;
+  align-self: center;
+}
+
+.navigation-header img {
+  align-self: center;
+}
+
+.navigation_list {
+  margin: 0;
+  padding: 22px 10px 22px 10px;
+  background-color: #fff;
+}
+
+.navigation_list.hidden {
+  display: none;
+}
+
+.navigation_list li {
+  margin: 0 0 21px 18px;
+  font-size: 20px;
+  color: #034769;
+  cursor: pointer;
+}
+
+.navigation_list li:last-child {
+  margin-bottom: 0;
+}
+
+/* ссылки */
+
+a:hover {
+  opacity: 0.65;
+}
+
+a:active {
+  opacity: 0.45;
+}
+
+.email {
+  pointer-events: none;
 }

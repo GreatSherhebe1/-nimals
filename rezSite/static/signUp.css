@@ -1,5 +1,5 @@
 html {
-    background: url(../pictures/background.jpg) no-repeat center center fixed;
+    background: url(../../pictures/background.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -17,7 +17,7 @@ h1 {
 }
 
 form {
-    background: url(../pictures/form.png) no-repeat center center;
+    background: url(../../pictures/form.png) no-repeat center center;
     margin: auto auto;
     width: 480px;
     height: 538px;
