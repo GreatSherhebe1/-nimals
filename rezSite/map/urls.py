@@ -2,5 +2,5 @@ from django.urls import path
 from .views import *
 
 urlpatterns = [
-    path(r'', show_map),
+    path(r'', show_map,name = 'map'),
 ]
