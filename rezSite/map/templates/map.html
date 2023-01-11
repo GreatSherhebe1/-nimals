@@ -12,13 +12,12 @@
   <div class="map" id="map" style="width: 100%; height: 100%; position: fixed; left: 0%; top: 0%;"></div>
 
   <div>
-      
-      <select class="routes" id="routes">
-        <option value="" selected>--Пожалуйста, выберите маршрут--</option>
-        <option value="RED_LINE" >Красная линия</option>
-        <option value="SMALL_LINE">По закоулкам истории</option>
-        <option value="LARGE_LINE">Культурно-образовательный маршрут</option>
-      </select>
+    <select class="routes" id="routes">
+      <option value="" selected>--Пожалуйста, выберите маршрут--</option>
+      <option value="RED_LINE" >Красная линия</option>
+      <option value="SMALL_LINE">По закоулкам истории</option>
+      <option value="LARGE_LINE">Культурно-образовательный маршрут</option>
+    </select>
 
     <header class="header">
       <div class="container">
@@ -43,7 +42,18 @@
       </div>
     </header>
   </div>
-
+  
+  <div class="point-description">
+    <img src="{% static 'pictures/example.png' %}">
+    <div class="text">
+      <h1>
+        Памятник жерствам массовых репрессий
+      </h1>
+      <p>
+        Памятник установлен возле Исторического музея. Место выбрано неслучайно, так как сталинский террор — одна из страшнейших страниц историй Режа и всей страны. По обеим сторонам памятника - по пять плит с именами репрессированных. На гранитной глыбе мемориальная доска, на ней выгравированы свеча, колючая проволока и надпись.
+      </p>
+    </div>
+  </div>
   <script src="{% static 'scripts/open-menu.js' %}"></script>
   <script src="{% static 'scripts/map-constructor.js' %}"></script>
 </body>

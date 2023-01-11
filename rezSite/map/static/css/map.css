@@ -546,33 +546,26 @@ a:active {
   height: 30px;
   top: 25px;
   right: 67px;
+  z-index: 1;
 }
 
 /* описание точки */
 
 .point-description {
-  margin: 0;
-  padding: 10px;
-  width: 35%;
+  width: 25%;
+  height: auto;
+  min-height: 100%;
   background-color: #ffffff;
-  min-width: 280px;
-  max-width: 400px;
-  height: auto;
-  min-height: 100%;
-}
-
-.text {
-  height: auto;
-  padding: 25px;
-}
-
-.interface {
-  display: flex;
   position: absolute;
-  width: calc(100% - 67px);
-  justify-content: space-between;
-  height: auto;
-  min-height: 100%;
+  min-width: 280px;
+  /* ? */
+  z-index: 0;
+}
+
+.point-description img{
+  width: 95%;
+  margin: 2.5% 2.5% 0 2.5%;
+  display: block;
 }
 
 .text h1 {
@@ -589,11 +582,9 @@ a:active {
   margin: 0;
 }
 
-.point-photo {
-  display: block;
-  padding: 0;
-  margin: 0;
-  width: 100%;
+.text {
+  height: auto;
+  padding: 25px;
 }
 
 .hidden {
