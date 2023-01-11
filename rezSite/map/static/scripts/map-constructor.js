@@ -1,34 +1,35 @@
 let url = 'http://127.0.0.1:8000/map/api/point';
 
+let array = undefined;
 
+async function test()
+{
+    await fetch(url, {
+      method: 'GET'
+    })
+    .then(function(response) { return response.json(); })
+    .then(function(json) {
+        array = [];
+        for (let i = 0; i < json.length; i++) {
+            array.push(new Array(json[i]['x'], json[i]['y'], json[i]['description']))
+        };
+        console.log(array);
+    });
+}
 
-// let test_routes = [Float32Array, Float32Array, String];
-// fetch(url).then(res => res.json()).then(points => points_count = points.length).then((points_count) => {
-//     for (let i = 0; i < points_count; i++) {
-//         fetch(url).then(res => res.json()).then(point => test_routes.push(new Array(point[i].x, point[i].y, point[i].description)));
+test();
+
+// fetch(url, {
+//   method: 'GET'
+// })
+// .then(function(response) { return response.json(); })
+// .then(function(json) {
+//     window.array = [];
+//     for (let i = 0; i < json.length; i++) {
+//         array.push(new Array(json[i]['x'], json[i]['y'], json[i]['description']))
 //     };
+//     console.log(array);
 // });
-//
-// console.log(test_routes);
-//
-// flag = test_routes[0][2];
-// array = [];
-// dict = {};
-// for (let i = 0; i < test_routes.length; i++) {
-//     if (i == test_routes.length - 1) {
-//         dict['flag'] = array;
-//     } else {
-//         if (flag === test_routes[i][3]) {
-//             array.push(test_routes[i]);
-//             test_routes.shift();
-//         } else {
-//             dict['flag'] = array;
-//             array = [];
-//             flag = test_routes[i][3];
-//         }
-//     };
-// };
-//console.log(dict);
 
 let routes = {
     RED_LINE: [[57.372802, 61.389878], [57.374452, 61.392304], [57.375213, 61.392987],
