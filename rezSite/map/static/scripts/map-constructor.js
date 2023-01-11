@@ -28,7 +28,7 @@ let url = 'http://127.0.0.1:8000/map/api/point';
 //         }
 //     };
 // };
-console.log(dict);
+//console.log(dict);
 
 let routes = {
     RED_LINE: [[57.372802, 61.389878], [57.374452, 61.392304], [57.375213, 61.392987],
