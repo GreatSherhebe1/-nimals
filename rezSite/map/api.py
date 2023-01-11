@@ -1,7 +1,7 @@
-
-from .models import Point,MapRoute
+from .models import Point, MapRoute
 from rest_framework import viewsets, permissions
-from .serializers import PointSerializer,MapRouteSerializer
+from .serializers import PointSerializer, MapRouteSerializer
+
 
 class PointViewSet(viewsets.ModelViewSet):
     queryset = Point.objects.all()
@@ -9,6 +9,7 @@ class PointViewSet(viewsets.ModelViewSet):
         permissions.AllowAny
     }
     serializer_class = PointSerializer
+
 
 class MapRouteViewSet(viewsets.ModelViewSet):
     queryset = MapRoute.objects.all()

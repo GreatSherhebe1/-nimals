@@ -1,3 +1,35 @@
+let url = 'http://127.0.0.1:8000/map/api/point';
+
+
+
+// let test_routes = [Float32Array, Float32Array, String];
+// fetch(url).then(res => res.json()).then(points => points_count = points.length).then((points_count) => {
+//     for (let i = 0; i < points_count; i++) {
+//         fetch(url).then(res => res.json()).then(point => test_routes.push(new Array(point[i].x, point[i].y, point[i].description)));
+//     };
+// });
+//
+// console.log(test_routes);
+//
+// flag = test_routes[0][2];
+// array = [];
+// dict = {};
+// for (let i = 0; i < test_routes.length; i++) {
+//     if (i == test_routes.length - 1) {
+//         dict['flag'] = array;
+//     } else {
+//         if (flag === test_routes[i][3]) {
+//             array.push(test_routes[i]);
+//             test_routes.shift();
+//         } else {
+//             dict['flag'] = array;
+//             array = [];
+//             flag = test_routes[i][3];
+//         }
+//     };
+// };
+console.log(dict);
+
 let routes = {
     RED_LINE: [[57.372802, 61.389878], [57.374452, 61.392304], [57.375213, 61.392987],
                   [57.37489413187298, 61.39177301331141], [57.374859, 61.391109], [57.371574, 61.390202],
@@ -31,60 +63,6 @@ function init(){
         }
     });
 
-    // let line = [[57.372802, 61.389878], [57.374452, 61.392304], [57.375213, 61.392987],
-    //               [57.37489413187298, 61.39177301331141], [57.374859, 61.391109], [57.371574, 61.390202],
-    //               [57.368657, 61.404359], [57.374820, 61.393283], [57.373102, 61.396104], [57.369807, 61.409551],
-    //               [57.373942, 61.396337]];
-
-    // // Создание экземпляра маршрута.
-    // let multiRoute = new ymaps.multiRouter.MultiRoute({
-    //     referencePoints: line,
-    //     params: {
-    //         // Тип маршрута: пешком.
-    //         routingMode: "pedestrian",
-    //         viaPointVisible: true,
-    //         viaPointIconRadius: 7,
-    //         viaPointIconFillColor: "#000088",
-    //         viaPointActiveIconFillColor: "#E63E92",
-    //         routeActiveMarkerVisible: false,
-    //         routeOpenBalloonOnClick: false,
-    //     }
-    // }, {
-    //     // Внешний вид путевых точек.
-    //     routeOpenBalloonOnClick: false,
-    //     routeActiveMarkerVisible: false,
-    //     viaPointVisible: true,
-    //     viaPointIconRadius: 7,
-    //     viaPointIconFillColor: "#000088",
-    //     viaPointActiveIconFillColor: "#E63E92",
-    //     wayPointStartIconColor: "#FFFFFF",
-    //     wayPointStartIconFillColor: "#B3B3B3",
-    //     // Внешний вид линии активного маршрута.
-    //     routeActiveStrokeWidth: 2,
-    //     routeActiveStrokeStyle: 'solid',
-    //     routeActiveStrokeColor: "#990000",
-    //     // Внешний вид линий альтернативных маршрутов.
-    //     routeStrokeStyle: 'solid',
-    //     routeStrokeWidth: 3,
-    //     // Автоматическое приближение к маршруту
-    //     boundsAutoApply: true
-    // });
-
-    // multiRoute.editor.start({ addMidPoints: true, dragWayPoints: false, dragViaPoints: true });
-    //
-    // multiRoute.model.events.add('requestsuccess', function() {
-    //     // Коллекция путевых точек маршрута.
-    //     var wayPoints = multiRoute.getWayPoints();
-    //
-    //     // Проход по коллекции путевых точек.
-    //     // Для каждой точки зададим содержимое меток.
-    //     wayPoints.each(function (point) {
-    //         point.options.set({
-    //             iconContentLayout: ymaps.templateLayoutFactory.createClass('{{ properties.request|raw }}'),
-    //         });
-    //     });
-    // });
-
     var linkRoute;
 
     document.getElementById("routes").onchange = function(evt) {
@@ -92,11 +70,9 @@ function init(){
             myMap.geoObjects.remove(linkRoute);
         }
         let route = routes[evt.target.value];
-        // Создание экземпляра маршрута.
         let myRoute = new ymaps.multiRouter.MultiRoute({
             referencePoints: route,
             params: {
-                // Тип маршрута: пешком.
                 routingMode: "pedestrian",
                 viaPointVisible: true,
                 viaPointIconRadius: 7,
@@ -106,7 +82,6 @@ function init(){
                 routeOpenBalloonOnClick: false,
             }
         }, {
-            // Внешний вид путевых точек.
             routeOpenBalloonOnClick: false,
             routeActiveMarkerVisible: false,
             viaPointVisible: true,
@@ -115,14 +90,11 @@ function init(){
             viaPointActiveIconFillColor: "#E63E92",
             wayPointStartIconColor: "#FFFFFF",
             wayPointStartIconFillColor: "#B3B3B3",
-            // Внешний вид линии активного маршрута.
             routeActiveStrokeWidth: 2,
             routeActiveStrokeStyle: 'solid',
             routeActiveStrokeColor: "#990000",
-            // Внешний вид линий альтернативных маршрутов.
             routeStrokeStyle: 'solid',
             routeStrokeWidth: 3,
-            // Автоматическое приближение к маршруту
             boundsAutoApply: true
         });
         myMap.geoObjects.add(myRoute);
