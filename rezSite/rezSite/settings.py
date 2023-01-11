@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'manual',
     'map',
     'signInUp',
+    'rest_framework',
 ]
 
 MIDDLEWARE = [
