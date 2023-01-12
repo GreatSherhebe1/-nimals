@@ -546,7 +546,7 @@ a:active {
   height: 30px;
   top: 25px;
   right: 67px;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* описание точки */
