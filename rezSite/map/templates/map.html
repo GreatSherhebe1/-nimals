@@ -43,7 +43,7 @@
     </header>
   </div>
   
-  <div class="point-description">
+  <div class="point-description hidden">
     <img src="{% static 'pictures/example.png' %}">
     <div class="text">
       <h1>
@@ -53,8 +53,12 @@
         Памятник установлен возле Исторического музея. Место выбрано неслучайно, так как сталинский террор — одна из страшнейших страниц историй Режа и всей страны. По обеим сторонам памятника - по пять плит с именами репрессированных. На гранитной глыбе мемориальная доска, на ней выгравированы свеча, колючая проволока и надпись.
       </p>
     </div>
+    <div class="close_button">
+      <img src="{% static 'pictures/to_left_close-menu-icon.png' %}">
+    </div>
   </div>
+  
   <script src="{% static 'scripts/open-menu.js' %}"></script>
-  <script src="{% static 'scripts/map-constructor.js' %}"></script>
+  <script src="{% static 'scripts/api.js' %}"></script>
 </body>
 </html>

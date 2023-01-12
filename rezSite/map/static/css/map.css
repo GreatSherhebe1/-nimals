@@ -587,6 +587,18 @@ a:active {
   padding: 25px;
 }
 
+.close_button {
+  position: absolute;
+  top: 5px;
+  left: 101%;
+  cursor: pointer;
+}
+
+.close_button img {
+  display: block;
+  width: 20px;
+}
+
 .hidden {
   display: none;
 }

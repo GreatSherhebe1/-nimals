@@ -2,7 +2,7 @@ let url = 'http://127.0.0.1:8000/map/api/point';
 
 let array = undefined;
 
-async function test()
+async function getPoints()
 {
     await fetch(url, {
       method: 'GET'
@@ -17,7 +17,7 @@ async function test()
     });
 }
 
-test();
+getPoints();
 
 // fetch(url, {
 //   method: 'GET'

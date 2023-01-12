@@ -10,4 +10,3 @@ urlpatterns = [
     path(r'', show_map, name='map'),
 ]
 urlpatterns += router.urls
-
